@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin'Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0; /* Supprime la marge par défaut */
+    }
+    #language-selector-container {
+        position: fixed; /* Fixe le conteneur en haut à droite */
+        top: 10px; /* Espace par rapport au haut de la page */
+        right: 10px; /* Espace par rapport à la droite de la page */
+        padding: 5px; /* Un peu de padding pour le style */
+        z-index: 1000; /* Assure que le conteneur est au-dessus d'autres éléments */
+    }
+
+</style>
+<script>
+    function setLanguage() {
+        var lang = document.getElementById('language-selector').value;
+        var elements = document.querySelectorAll('[data-lang]');
+        elements.forEach(element => {
+            element.textContent = element.getAttribute('data-lang-' + lang);
+        });
+    }
+</script>
+
+<body>
+<div id="language-selector-container">
+    <label style="color: white;" for="language-selector">Langue : </label>
+    <select id="language-selector" onchange="setLanguage()">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+    </select>
+</div>
+    <!--COUVERTURE-->
+<!-- COUVERTURE -->
+<div class="cover">
+    <img class="cover-profile" src="Logo.png">
+    <div class="cover2">
+        <p data-lang data-lang-fr="Créations uniques" data-lang-en="Unique epoxy">Créations uniques</p> 
+        <p data-lang data-lang-fr="en résine époxy" data-lang-en="Resin Creations">en résine époxy</p>
+    </div>
+</div>
+
+
+    <!--SECTION GRISE 1 -->
+    <div class="section section-grise1">
+        <div class="separateur"></div>
+        <!--<p data-lang data-lang-fr="Je crée des oeuvres d'art totalement uniques en résine Époxy" data-lang-en="I Create Totally Unique Epoxy Resin Artworks">Je crée des<b> oeuvres d'art</b> totalement <b>uniques</b> en résine Époxy</p>-->
+    </div>
+
+<!--SECTION BLANCHE -->
+<div class="section">
+    <h2 style="font-size: 40px; color: rgb(121, 31, 121);" data-lang data-lang-fr="Mon histoire" data-lang-en="My story">Mon histoire</h2>
+    <img src="IMG_0342.jpeg" class="col-contenu">
+    <div class="col-contenu float-right">
+        <div class="texte-avec-ligne-verticale">
+            <p style="margin: 0;" data-lang data-lang-fr="Je m'appelle Polina Tasheva." data-lang-en="My name is Polina Tasheva.">Je m'appelle Polina Tasheva.</p>
+            <p data-lang data-lang-fr="Après une vie en Russie, quelques années à New-York et de nombreux voyages dans le monde entier, je suis arrivée en France il y a 12 ans avec mon mari et nos trois filles et nous avons posé nos valises à Anthy.
+            Passionnée par les arts depuis toujours, j'ai la chance de pratiquer le dessin (pastel, acrylique, huile) depuis plusieurs années, avec un professeur et au sein d'une association.
+            Je suis tombée amoureuse lorsque j'ai vu une création en résine Epoxy il y cinq ans et à partir de ce moment-là ça a été comme une évidence : j'ai donc fait plusieurs formations en France et en Russie afin d'apprendre les différentes techniques." data-lang-en="After living in Russia, New York and traveling the world, I have arrived in France 12 years ago with my husband and our three daughters to find our new home in Anthy.
+            Always being passionate about arts, I have been practicing drawing (pastel, acrylic, oil) for several years, working with a teacher and within the association. And when five years ago I discovered Epoxy resin, I knew I have found my true passion. I have studied in France and abroad to learn the techniques and processes.">Après une vie en Russie, quelques années à New-York et de nombreux voyages dans le monde entier, je suis arrivée en France il y a 12 ans avec mon mari et nos trois filles et nous avons posé nos valises à Anthy.
+                Passionnée par les arts depuis toujours, j'ai la chance de pratiquer le dessin (pastel, acrylique, huile) depuis plusieurs années, avec un professeur et au sein d'une association.
+                Je suis tombée amoureuse lorsque j'ai vu une création en résine Epoxy il y cinq ans et à partir de ce moment-là ça a été comme une évidence : j'ai donc fait plusieurs formations en France et en Russie afin d'apprendre les différentes techniques.</p>
+        </div>
+    </div>
+</div>
+
+
+<!--
+    SECTION GRIS 2 MOD
+    <div class="section section-grise2">
+        <h2 style="font-size: 40px;" data-lang data-lang-fr="Mon processus" data-lang-en="My process">Mon processus</h2>
+        <img style="width: 50%; position: relative;" src="IMG_9038.jpg" class="col-contenu"/>
+        <img style="width: 50%; position: relative; margin-left: 55%; margin-top: 0%;" src="IMG_5172.jpg">
+        <div class="col-contenu float-right">
+            <div class="texte-avec-ligne-verticale">
+                <p data-lang data-lang-fr="La résine époxy est une résine synthétique qui se compose de deux éléments : la résine en elle-même et le durcisseur. Lorsque ces deux composants sont mélangés, le matériau durcit, et cela peut prendre entre douze et vingt-quatre heures.
+                La résine liquide devient un plastique solide avec une surface claire et brillante au fil du temps ; ensuite cette surface doit être polie, et pour finir, une couche de brillance doit être ajoutée afin que l'objet dévoile tout son éclat, sa profondeur et sa clarté.
+                Chacune de mes créations nécessite donc plusieurs jours de travail et d'amour.
+                " data-lang-en="Epoxy resin is a synthetic resin that consists of two elements: the resin itself and the hardener. When these two components are mixed, the material hardens, and this can take between twelve and twenty-four hours.
+                Liquid resin becomes a solid plastic with a clear, shiny surface over time; then this surface must be polished, and finally, a layer of gloss must be added so that the object reveals all its brilliance, depth and clarity.
+                Each of my creations is unique and takes several days of work and love.">La résine époxy est une résine synthétique qui se compose de deux éléments : la résine en elle-même et le durcisseur. Lorsque ces deux composants sont mélangés, le matériau durcit, et cela peut prendre entre douze et vingt-quatre heures.
+                    La résine liquide devient un plastique solide avec une surface claire et brillante au fil du temps ; ensuite cette surface doit être polie, et pour finir, une couche de brillance doit être ajoutée afin que l'objet dévoile tout son éclat, sa profondeur et sa clarté.
+                    Chacune de mes créations nécessite donc plusieurs jours de travail et d'amour.</p>
+
+                    <p data-lang data-lang-fr="Ce que j'aime particulièrement avec cette matière, c'est le mélange entre la partie purement artistique (quand je commence à imaginer l'objet, dans ma tête ou en dessin), et l'autre partie très technique (avec un lieu et un équipement adaptés) où je donne vie à l'objet en rajoutant des détails au fur et à mesure.
+                    Chaque création est unique avec un résultat presque magique." data-lang-en="What I particularly like with this material is the mix between the purely artistic part – the design, and highly technical part- when I work in my studio  bringing the object to life by gradually adding details to it.">Ce que j'aime particulièrement avec cette matière, c'est le mélange entre la partie purement artistique (quand je commence à imaginer l'objet, dans ma tête ou en dessin), et l'autre partie très technique (avec un lieu et un équipement adaptés) où je donne vie à l'objet en rajoutant des détails au fur et à mesure.
+                    Chaque création est unique avec un résultat presque magique.</p>
+            </div>
+        </div>
+    </div>
+-->
+    <!--SECTION GRIS 2 MOD-->
+<div class="section section-grise2">
+    <h2 style="font-size: 40px;" data-lang data-lang-fr="Mon processus" data-lang-en="My process">Mon processus</h2>
+    <div class="image-container" style="display: flex; justify-content: space-between;">
+        <img style="width: 49%;" src="IMG_9038.jpg" class="col-contenu"/>
+        <img style="width: 49%;" src="IMG_5172.jpg">
+    </div>
+    <div class="col-contenu" style="margin-top: 20px; text-align: left;">
+        <div class="texte-avec-ligne-verticale">
+            <p data-lang data-lang-fr="La résine époxy est une résine synthétique qui se compose de deux éléments : la résine en elle-même et le durcisseur. Lorsque ces deux composants sont mélangés, le matériau durcit, et cela peut prendre entre douze et vingt-quatre heures.
+            La résine liquide devient un plastique solide avec une surface claire et brillante au fil du temps ; ensuite cette surface doit être polie, et pour finir, une couche de brillance doit être ajoutée afin que l'objet dévoile tout son éclat, sa profondeur et sa clarté.
+            Chacune de mes créations nécessite donc plusieurs jours de travail et d'amour.
+            " data-lang-en="Epoxy resin is a synthetic resin that consists of two elements: the resin itself and the hardener. When these two components are mixed, the material hardens, and this can take between twelve and twenty-four hours.
+            Liquid resin becomes a solid plastic with a clear, shiny surface over time; then this surface must be polished, and finally, a layer of gloss must be added so that the object reveals all its brilliance, depth and clarity.
+            Each of my creations is unique and takes several days of work and love.">La résine époxy est une résine synthétique qui se compose de deux éléments : la résine en elle-même et le durcisseur. Lorsque ces deux composants sont mélangés, le matériau durcit, et cela peut prendre entre douze et vingt-quatre heures.
+                La résine liquide devient un plastique solide avec une surface claire et brillante au fil du temps ; ensuite cette surface doit être polie, et pour finir, une couche de brillance doit être ajoutée afin que l'objet dévoile tout son éclat, sa profondeur et sa clarté.
+                Chacune de mes créations nécessite donc plusieurs jours de travail et d'amour.</p>
+
+                <p data-lang data-lang-fr="Ce que j'aime particulièrement avec cette matière, c'est le mélange entre la partie purement artistique (quand je commence à imaginer l'objet, dans ma tête ou en dessin), et l'autre partie très technique (avec un lieu et un équipement adaptés) où je donne vie à l'objet en rajoutant des détails au fur et à mesure.
+                Chaque création est unique avec un résultat presque magique." data-lang-en="What I particularly like with this material is the mix between the purely artistic part – the design, and highly technical part- when I work in my studio bringing the object to life by gradually adding details to it.">Ce que j'aime particulièrement avec cette matière, c'est le mélange entre la partie purement artistique (quand je commence à imaginer l'objet, dans ma tête ou en dessin), et l'autre partie très technique (avec un lieu et un équipement adaptés) où je donne vie à l'objet en rajoutant des détails au fur et à mesure.
+                Chaque création est unique avec un résultat presque magique.</p>
+            <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">En savoir plus sur mon profil (rickroll)</a>-->
+        </div>
+    </div>
+</div>
+
+<!--SECTION BLANCHE 
+<div class="section">
+    <h2 style="font-size: 40px; color: rgb(121, 31, 121);" data-lang data-lang-fr="Mon histoire" data-lang-en="My story">Mon histoire</h2>
+    <img src="IMG_0342.jpeg" class="col-contenu">
+    <div class="col-contenu float-right">
+        <div class="texte-avec-ligne-verticale">
+            <p style="margin: 0;" data-lang data-lang-fr="Je m'appelle Polina Tasheva." data-lang-en="My name is Polina Tasheva.">Je m'appelle Polina Tasheva.</p>
+            <p data-lang data-lang-fr="Après une vie en Russie, quelques années à New-York et de nombreux voyages dans le monde entier, je suis arrivée en France il y a 12 ans avec mon mari et nos trois filles et nous avons posé nos valises à Anthy.
+            Passionnée par les arts depuis toujours, j'ai la chance de pratiquer le dessin (pastel, acrylique, huile) depuis plusieurs années, avec un professeur et au sein d'une association.
+            Je suis tombée amoureuse lorsque j'ai vu une création en résine Epoxy il y cinq ans et à partir de ce moment-là ça a été comme une évidence : j'ai donc fait plusieurs formations en France et en Russie afin d'apprendre les différentes techniques." data-lang-en="After living in Russia, New York and traveling the world, I have arrived in France 12 years ago with my husband and our three daughters to find our new home in Anthy.
+            Always being passionate about arts, I have been practicing drawing (pastel, acrylic, oil) for several years, working with a teacher and within the association. And when five years ago I discovered Epoxy resin, I knew I have found my true passion. I have studied in France and abroad to learn the techniques and processes.">Après une vie en Russie, quelques années à New-York et de nombreux voyages dans le monde entier, je suis arrivée en France il y a 12 ans avec mon mari et nos trois filles et nous avons posé nos valises à Anthy.
+                Passionnée par les arts depuis toujours, j'ai la chance de pratiquer le dessin (pastel, acrylique, huile) depuis plusieurs années, avec un professeur et au sein d'une association.
+                Je suis tombée amoureuse lorsque j'ai vu une création en résine Epoxy il y cinq ans et à partir de ce moment-là ça a été comme une évidence : j'ai donc fait plusieurs formations en France et en Russie afin d'apprendre les différentes techniques.</p>
+        </div>
+    </div>
+</div>
+-->
+<!-- SECTION BLANCHE -->
+<div class="section">
+    <h2 style="font-size: 40px; color: rgb(36, 126, 36);" data-lang data-lang-fr="Comment entretenir les objets en résine époxy" data-lang-en="How to maintain epoxy resin objects">Comment entretenir les objets en résine époxy</h2>
+    <img src="flowers.jpeg" class="col-contenu">
+        <div class="col-contenu" style="width: 100%; margin-left: 0px; margin-top: 20px;">
+            <div class="texte-avec-ligne-verticale">
+                <ul style="margin-top: 0; font-size: 22px; margin-left: 20px; padding-left: 20px; word-wrap: break-word;">
+                    <li data-lang data-lang-fr="Nettoyez à la main avec de l'eau savonneuse et un chiffon en microfibre" data-lang-en="Clean by hand with soapy water and a microfiber cloth">
+                        Nettoyez à la main avec de l'eau savonneuse et un chiffon en microfibre
+                    </li>
+                    <li data-lang data-lang-fr="Évitez l'utilisation d'acétone, d'alcool à brûler et de tous types d'éponges abrasives" data-lang-en="Avoid using acetone, rubbing alcohol, and any type of abrasive sponges">
+                        Évitez l'utilisation d'acétone, d'alcool à brûler et de tous types d'éponges abrasives
+                    </li>
+                    <li data-lang data-lang-fr="Évitez les chocs et l'exposition à de fortes chaleurs" data-lang-en="Avoid impacts and exposure to high temperatures">
+                        Évitez les chocs et l'exposition à de fortes chaleurs
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<!-- SECTION PORTFOLIO -->
+<div class="section section-grise2">
+    <h2 data-lang data-lang-fr="Mon portfolio" data-lang-en="My portfolio" style="font-size: 40px;">Mon portfolio</h2>
+    
+    <!-- Section Déco'Maison -->
+    <div class="portfolio-category">
+        <p data-lang data-lang-fr="Déco'Maison" data-lang-en="Home Decoration" style="font-size: 22px; text-align: center;">Déco'Maison</p>
+        <div class="portfolio-images" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <img style="width: 45%;" src="1.jpeg" alt="Déco'Maison 1">
+            <img style="width: 45%;" src="7.jpeg" alt="Déco'Maison 2">
+            <img style="width: 45%;" src="6.jpeg" alt="Déco'Maison 3">
+            <img style="width: 45%;" src="10.jpeg" alt="Déco'Maison 4">
+        </div>
+    </div>
+    
+    <!-- Section Bijoux/Accessoires -->
+    <div class="portfolio-category" style="margin-top: 40px;">
+        <p data-lang data-lang-fr="Bijoux/Accessoires" data-lang-en="Jewelry/Accessories" style="font-size: 22px; text-align: center;">Bijoux/Accessoires</p>
+        <div class="portfolio-images" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <img style="width: 45%;" src="image7 (1).jpeg" alt="Bijoux 1">
+            <img style="width: 45%;" src="image0 (1).jpeg" alt="Bijoux 2">
+            <img style="width: 45%;" src="image3 (1).jpeg" alt="Bijoux 3">
+            <img style="width: 45%;" src="image2.jpeg" alt="Bijoux 4">
+            <img style="width: 45%;" src="image1.jpeg" alt="Bijoux 5">
+            <img style="width: 45%;" src="image6 (1).jpeg" alt="Bijoux 6">
+            <img style="width: 45%;" src="image9.jpeg" alt="Bijoux 7">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<body>
+    <div class="section">
+        <div class="separateur display-mobile" style="margin-bottom: 15px;"></div>   
+
+        <div class="frame">
+            <p style="margin-bottom: -10px;" class="frame-title" data-lang data-lang-fr="Contactez moi" data-lang-en="Contact me">Contactez moi</p>
+            <table style="border-collapse: collapse;">  
+                <tr>
+                    <!-- Remonter le logo avec un margin-top négatif -->
+                    <img src="Logo.png" style="margin-top: -50px; margin-bottom: 20px; position: relative;" alt="Logo">
+                    <td>
+                        <div class="style-contact" style="margin-left: 20px;">
+                            <p style="font-size: 20px;" class="inline-p">Email :</p>
+                            <a style="font-size: 20px;" href="mailto:tashevapolina@gmail.com?subjet=Contact%20Dimitri%20Sudomir" style="text-decoration: none; color: #333;">tashevapolina@gmail.com</a><br>
+                            <p style="font-size: 20px;" class="inline-p" data-lang data-lang-fr="Téléphone :" data-lang-en="Mobile Number :">Téléphone :</p>
+                            <a style="font-size: 20px;" href="tel:+33658810764" style="text-decoration: none; color: #333;">06 58 81 07 64</a><p class="inline-p" style="display: inline;">.</p><br>
+                            <p style="font-size: 20px;" class="inline-p" style="display: inline;">Instagram :</p>
+                            <a style="font-size: 20px;" href="https://www.instagram.com/p_tash.art?igsh=MWN5bmdsMXBxamR2dw==" style="text-decoration: none; color: #333;">p_tash.art</a>
+                        </div> 
+                        <div>
+                            <p style="font-size: 20px; margin-left: 0%;" data-lang data-lang-fr="Retrouvez moi sur les marchés régionaux et locaux ainsi que dans les boutiques suivantes :" data-lang-en="Find me at regional and local markets as well as in the following boutiques:">Retrouvez moi sur les marchés régionaux et locaux ainsi que dans les boutiques suivantes :</p>
+                            <img style="margin-left: 0; margin-top: 0; width: 60%;" src="loc3.png">
+                            <p style="font-size: 28px; font-weight: bold;" data-lang data-lang-fr="Réalisation sur commande" data-lang-en="Personal brand">Réalisation sur commande</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+        <!--SECTION BLANCHE FRAME 
+            <iframe src="contact-frame.html" scrolling="no"/>-->
+</body>
+</html>

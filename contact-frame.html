@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0; /* Supprime la marge par défaut */
+    }
+    #language-selector-container {
+        position: fixed; /* Fixe le conteneur en haut à droite */
+        top: 10px; /* Espace par rapport au haut de la page */
+        right: 10px; /* Espace par rapport à la droite de la page */
+        padding: 5px; /* Un peu de padding pour le style */
+        z-index: 1000; /* Assure que le conteneur est au-dessus d'autres éléments */
+    }
+
+</style>
+<script>
+    function setLanguage() {
+        var lang = document.getElementById('language-selector').value;
+        var elements = document.querySelectorAll('[data-lang]');
+        elements.forEach(element => {
+            element.textContent = element.getAttribute('data-lang-' + lang);
+        });
+    }
+</script>
+<div id="language-selector-container">
+    <label for="language-selector">Choisissez la langue : </label>
+    <select id="language-selector" onchange="setLanguage()">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+    </select>
+</div>
+
+<body>
+    <div class="section">
+        <div class="separateur display-mobile" style="margin-bottom: 15px;"></div>   
+    <div class="frame">
+        <p class="frame-title" data-lang data-lang-fr="Contactez moi" data-lang-en="Contact me">Contactez moi</p>
+        <table>  
+            <tr>
+                <td valign="top" align="center"><img src="Logo.png" style="width: 100px;"></td>
+                <td>
+                    <div class="texte-avec-ligne-verticale" style="margin-left: 20px;">
+                        <p>
+                            Besoin de discuter ou obtenir l'avis d'un expert ?
+                            <br><br>
+                            <a href="mailto:dimitri.sudomir@gmail.com?subjet=Contact%20Dimitri%20Sudomir">Contactez moi par email</a> ou directement 
+                            par téléphone au <a href="tel:+33658810764">06 58 81 07 64</a><br>
+                            <a href="https://www.instagram.com/p_tash.art?igsh=MWN5bmdsMXBxamR2dw==">Mon Instagram</p>
+                        
+                        </p>
+                    </div> 
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
